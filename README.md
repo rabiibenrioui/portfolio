@@ -1,49 +1,20 @@
-# My Portfolio
+# Rabiibenrioui's Personal Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills and projects.
+Welcome to my personal portfolio! This website showcases my skills, projects, and experiences as a developer.
 
-## 🎨 About
+## About Me
+I am a passionate software developer with expertise in various technologies. My goal is to create impactful projects that solve real-world problems.
 
-This is my personal website built with modern web technologies. It serves as a platform to display my work, skills, and experience.
+## Projects
+Here, you can find some of my key projects:
+- **Project Name 1**: A brief description of the project and its technologies.
+- **Project Name 2**: A brief description of the project and its technologies.
 
-## 🛠️ Built With
+## Skills
+- Programming Languages: JavaScript, Python, etc.
+- Frameworks: React, Node.js, etc.
+- Tools: Git, Docker, etc.
 
-- **HTML** (66.5%) - Structure and markup
-- **CSS** (28.6%) - Styling and design
-- **JavaScript** (4.9%) - Interactive features
-
-## 📁 Project Structure
-
-```
-my-website/
-├── index.html
-├── styles/
-│   └── style.css
-├── scripts/
-│   └── main.js
-└── README.md
-```
-
-## 🚀 Features
-
-- Responsive design
-- Clean and modern UI
-- Easy to customize
-
-## 💻 Getting Started
-
-1. Clone the repository
-2. Open `index.html` in your web browser
-3. Customize the content to fit your needs
-
-## 📝 Customization
-
-Feel free to edit the HTML, CSS, and JavaScript files to personalize your portfolio with your own projects, skills, and information.
-
-## 📄 License
-
-This project is open source and available for personal use.
-
----
-
-**Happy coding!** ✨
+## Contact
+Feel free to reach out to me for collaboration or opportunities!!
+You can connect with me on LinkedIn or email me at myemail@example.com.
