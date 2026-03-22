@@ -7,7 +7,7 @@ export default function Footer({ name }: FooterProps) {
     
     return (
         <footer
-          className="flex items-center justify-between py-8 mb-4"
+          className="flex items-center justify-between py-6 mb-4"
           style={{ borderTop: '1px solid var(--border)' }}
         >
 

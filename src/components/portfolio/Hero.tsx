@@ -40,12 +40,12 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
             {/* custom cursor */}
             <div
                 ref={cursorRef}
-                    className="fixed z-[9999] w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen transition-[width,height] duration-200"
+                    className="fixed z-9999 w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen transition-[width,height] duration-200"
                     style={{ background: 'var(--color-accent)' }}
             />
             <div
                 ref={glowRef}
-                className="fixed z-[9998] w-72 h-72 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
+                className="fixed z-9998 w-72 h-72 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
                 style={{
                     background: 'radial-gradient(circle, var(--glow) 0%, transparent 70%)',
                     transition: 'left 0.6s cubic-bezier(0.23,1,0.32,1), top 0.6s cubic-bezier(0.23,1,0.32,1)',
@@ -53,7 +53,7 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
             />
 
             {/* hero section */}
-            <section className="pt-10 pb-16" style={{ borderTop: 'none' }}>
+            <section className="pt-10 pb-6" style={{ borderTop: 'none' }}>
 
                 {/* role label */}
                 <p
@@ -92,7 +92,7 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
 
                 {/* meta row */}
                 <div
-                className="flex items-center gap-6"
+                className="flex items-center justify-between px-2 gap-6"
                 style={{ animation: 'fadeUp 0.9s 0.34s ease both' }}
                 >
                     <span
@@ -101,16 +101,19 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
                     >
                         📍 {location}
                     </span>
+
                     <span
                         className="w-1 h-1 rounded-full"
                         style={{ background: 'var(--border)' }}
                     />
+                    
                     <span
                         className="font-mono text-xs font-light tracking-wide"
                         style={{ color: 'var(--muted)' }}
                     >
-                        {languages}
+                        {languages} 
                     </span>
+
                 </div>
 
             </section>

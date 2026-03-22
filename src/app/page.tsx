@@ -11,7 +11,7 @@ const data: PortfolioData = {
   role:      'Software Developer',
   tagline:   "I turn raw ideas into polished digital applications — from the first line of code to the final deployed experience.",
   location:  'Casablanca, MA',
-  languages: 'EN · FR · DE · AR',
+  languages: 'English · French · German · Arabic',
 
   skills: [
     { category: 'Frontend',  items: ['HTML5', 'CSS3', 'JavaScript', 'React'] },
@@ -47,14 +47,14 @@ const data: PortfolioData = {
   socials: [
     { platform: 'linkedin', label: 'LinkedIn',   url: 'https://linkedin.com' },
     { platform: 'github',   label: 'GitHub',     url: 'https://github.com/rabiibenrioui' },
-    { platform: 'twitter',  label: 'X / Twitter', url: 'https://x.com' },
+    { platform: 'twitter',  label: 'X', url: 'https://x.com' },
     { platform: 'email',    label: 'Email',       url: 'mailto:rabii@example.com' },
   ],
 }
 
 export default function Home() {
   return (
-    <main className='max-w-3xl mx-auto px-8 py-2'>
+    <main className='max-w-4xl mx-auto p-6'>
       <Navbar name={data.name} />
       
       <Hero 

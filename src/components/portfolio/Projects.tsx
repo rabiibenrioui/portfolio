@@ -30,7 +30,7 @@ export default function Projects({ projects }: ProjectsProps) {
     }, [])
 
     return (
-        <section id="work" ref={sectionRef} className="py-16" style={{ borderTop: '1px solid var(--border)' }}>
+        <section id="work" ref={sectionRef} className="py-6" style={{ borderTop: '1px solid var(--border)' }}>
 
             {/* section label */}
             <div className="flex items-center gap-4 mb-10">

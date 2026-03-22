@@ -33,10 +33,10 @@ const icons: Record<string, JSX.Element> = {
 
 export default function Contact({ socials }: ContactProps) {
     return (
-        <section id="contact" className="py-16" style={{ borderTop: '1px solid var(--border)' }}>
+        <section id="contact" className="py-6" style={{ borderTop: '1px solid var(--border)' }}>
 
             {/* section label*/}
-            <div className="flex items-center gap-4 mb-10">
+            <div className="flex items-center gap-4 mb-6">
                 <span
                   className="font-mono text-[10px] font-light tracking-[0.18em] uppercase whitespace-nowrap"
                   style={{ color: 'var(--muted)' }}
@@ -56,7 +56,7 @@ export default function Contact({ socials }: ContactProps) {
                       href={social.url}
                       target={social.platform !== 'email' ? '_blank' : undefined}
                       rel="noopener noreferrer"
-                      className="flex flex-1 items-center justify-center gap-2 font-mono text-xs font-light tracking-widest uppercase no-underline transition-all duration-200"
+                      className="flex flex-1 items-center justify-center gap-2 py-4 font-mono text-sm font-light tracking-widest uppercase no-underline transition-all duration-200"
                       style={{
                         color: 'var(--muted)',
                         borderRight: i < socials.length - 1 ? '1px solid var(--border)' : 'none',

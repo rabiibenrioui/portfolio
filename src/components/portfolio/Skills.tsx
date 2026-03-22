@@ -30,7 +30,7 @@ export default function Skills({ skills }: SkillsProps) {
     }, [])
 
     return (
-        <section id="skills" ref={sectionRef} className="py-16" style={{ borderTop: '1px solid var(--border)' }}>
+        <section id="skills" ref={sectionRef} className="py-6" style={{ borderTop: '1px solid var(--border)' }}>
 
             {/* section label */}
             <div>
