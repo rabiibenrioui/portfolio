@@ -22,12 +22,20 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
         const glow = glowRef.current
 
         if(!cursor || !glow) return
+        
+        let moved = false;
 
         const move = (e: MouseEvent) => {
             cursor.style.left = e.clientX + 'px'
             cursor.style.top  = e.clientY + 'px'
             glow.style.left   = e.clientX + 'px'
             glow.style.top    = e.clientY + 'px'
+        }
+
+        if (!moved) {
+            cursor.style.opacity = '1'
+            glow.style.opacity   = '1'
+            moved = true
         }
 
         window.addEventListener('mousemove', move)
@@ -40,14 +48,15 @@ export default function Hero({ name, role, tagline, location, languages }: HeroP
             {/* custom cursor */}
             <div
                 ref={cursorRef}
-                    className="fixed z-9999 w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen transition-[width,height] duration-200"
-                    style={{ background: 'var(--color-accent)' }}
+                    className="hidden md:block fixed z-9999 w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen transition-[width,height] duration-200"
+                    style={{ background: 'var(--color-accent)', opacity: 0 }}
             />
             <div
                 ref={glowRef}
-                className="fixed z-9998 w-72 h-72 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
+                className="hidden md:block fixed z-9998 w-72 h-72 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
                 style={{
                     background: 'radial-gradient(circle, var(--glow) 0%, transparent 70%)',
+                    opacity: 0,
                     transition: 'left 0.6s cubic-bezier(0.23,1,0.32,1), top 0.6s cubic-bezier(0.23,1,0.32,1)',
                 }}
             />

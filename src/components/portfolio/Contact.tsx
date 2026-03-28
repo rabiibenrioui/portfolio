@@ -46,33 +46,30 @@ export default function Contact({ socials }: ContactProps) {
             </div>
 
             {/* socials row */}
-            <div
-              className="flex"
-              style={{ border: '1px solid var(--border)' }}
-            >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2" style={{ border: '1px solid var(--border)' }}>
                 {socials.map((social, i) => (
-                    <a
-                      key={social.platform}
-                      href={social.url}
-                      target={social.platform !== 'email' ? '_blank' : undefined}
-                      rel="noopener noreferrer"
-                      className="flex flex-1 items-center justify-center gap-2 py-4 font-mono text-sm font-light tracking-widest uppercase no-underline transition-all duration-200"
-                      style={{
-                        color: 'var(--muted)',
-                        borderRight: i < socials.length - 1 ? '1px solid var(--border)' : 'none',
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.color      = 'var(--color-heading)'
-                        e.currentTarget.style.background = 'var(--color-surface)'
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.color      = 'var(--muted)'
-                        e.currentTarget.style.background = 'transparent'
-                      }}
-                    >
-                        {icons[social.platform]}
-                        {social.label}
-                    </a>
+                  <a
+                    key={social.platform}
+                    href={social.url}
+                    target={social.platform !== 'email' ? '_blank' : undefined}
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 py-4 font-mono text-sm font-light tracking-widest uppercase no-underline transition-all duration-200 md:"
+                    style={{
+                      color: 'var(--muted)',
+                      borderRight: i < socials.length - 1 ? '1px solid var(--border)' : 'none',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.color      = 'var(--color-heading)'
+                      e.currentTarget.style.background = 'var(--color-surface)'
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.color      = 'var(--muted)'
+                      e.currentTarget.style.background = 'transparent'
+                    }}
+                  >
+                      {icons[social.platform]}
+                      {social.label}
+                  </a>
                 ))}
             </div>
 

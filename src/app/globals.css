@@ -24,7 +24,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: #0a0a09; color: var(--body); cursor: none; }
+body { background: #0a0a09; color: var(--body) }
 
 /* Grain texture overlay */
 body::before {
@@ -42,3 +42,14 @@ body::before {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: none; }
 }
+
+/* Restore default cursor on mobile */
+@media (max-width: 768px) {
+  body { cursor: auto; }
+}
+/* Remove default cursor on larger screens */
+@media (min-width: 768px) {
+  body,
+  body * { cursor: none !important }
+}
+

@@ -6,6 +6,7 @@ import Contact   from '@/components/portfolio/Contact'
 import Footer    from '@/components/portfolio/Footer'
 import type { PortfolioData } from '@/types/portfolio'
 
+// Page data
 const data: PortfolioData = {
   name:      'Rabii Benrioui',
   role:      'Software Developer',
@@ -45,10 +46,10 @@ const data: PortfolioData = {
   ],
 
   socials: [
-    { platform: 'linkedin', label: 'LinkedIn',   url: 'https://linkedin.com' },
+    { platform: 'linkedin', label: 'LinkedIn',   url: 'https://linkedin.com/in/rabiibenrioui' },
     { platform: 'github',   label: 'GitHub',     url: 'https://github.com/rabiibenrioui' },
-    { platform: 'twitter',  label: 'X', url: 'https://x.com' },
-    { platform: 'email',    label: 'Email',       url: 'mailto:rabii@example.com' },
+    { platform: 'twitter',  label: 'X', url: 'https://x.com/rabiibenrioui' },
+    { platform: 'email',    label: 'Email',       url: 'mailto:rabii.myself@gmail.com' },
   ],
 }
 

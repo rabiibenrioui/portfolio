@@ -22,9 +22,9 @@ export default function Navbar({ name }: NavbarProps) {
 
     // navbar links
     const links = [
-        { label: 'Skills', href:'#skills' },
-        { label: 'Work', href:'#work' },
-        { label: 'Contact', href:'#contact' }
+        { label: 'Skills', section:'skills' },
+        { label: 'Work', section:'work' },
+        { label: 'Contact', section:'contact' }
     ]
 
     return (
@@ -38,27 +38,27 @@ export default function Navbar({ name }: NavbarProps) {
           >
             {/* Wordmark */}
 
-            <a
-              href="#"
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="font-mono text-sm font-light tracking-widest uppercase"
               style={{color: 'var(--color-accent)'}}>
                 {firstName}
-            </a>
+            </button>
 
             {/* Links */}
             <ul className="flex gap-4 list-none items-center">
-                {links.map(({ label, href }) => (
-                    <li key={href}>
+                {links.map(({ label, section }) => (
+                    <li key={section}>
 
-                        <a 
-                          href={href}
+                        <button
+                          onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' })}
                           className="font-mono text-sm font-light tracking-widest uppercase transition-colors duration-200"
                           style={{ color: 'var(--muted)' }}
                           onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-heading)')}
                           onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted)')}
                           >
                             {label}
-                        </a>
+                        </button>
 
                     </li>
                 ))}
