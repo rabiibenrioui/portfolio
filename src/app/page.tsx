@@ -15,10 +15,10 @@ const data: PortfolioData = {
   languages: 'English · French · German · Arabic',
 
   skills: [
-    { category: 'Frontend',  items: ['HTML5', 'CSS3', 'JavaScript', 'React'] },
-    { category: 'Backend',   items: ['Python', 'PHP', 'C#', 'MySQL'] },
-    { category: 'Tools',     items: ['Git', 'GitHub', 'Vercel', 'Firebase'] },
-    { category: 'Concepts',  items: ['Responsive Design', 'System Design', 'REST APIs'] },
+    { category: 'Frontend',  items: ['React', 'NextJS', 'React Native', 'Tailwind'] },
+    { category: 'Backend',   items: ['JavaScript', 'TypeScript', 'Python', 'C#'] },
+    { category: 'Tools',     items: ['Git', 'GitHub', 'Expo', 'Figma'] },
+    { category: 'Concepts',  items: ['Responsive Design', 'Cross-Platform', 'REST APIs'] },
   ],
 
   projects: [
