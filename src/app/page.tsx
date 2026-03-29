@@ -23,25 +23,25 @@ const data: PortfolioData = {
 
   projects: [
     {
-      id:          'calculator',
+      id:          'clocky',
       number:      '01',
-      name:        'Bank Interest Calculator',
-      description: 'A clean utility app for calculating compound and simple interest across different banking scenarios.',
-      url:         '#',
+      name:        'Clocky',
+      description: 'A feature-rich mobile clock app built with TypeScript, offering alarms, global timezones, and a stopwatch. Currently in development, with upcoming premium features like streak tracking and advanced utilities.',
+      url:         'https://github.com/rabiibenrioui/Clocky',
     },
     {
-      id:          'landing',
+      id:          'weather',
       number:      '02',
-      name:        'Company Landing Page',
-      description: 'A responsive, conversion-focused marketing page built for a client — performance-optimised from the ground up.',
-      url:         '#',
+      name:        'My Weather',
+      description: 'A sleek mobile weather app built with React Native and Expo, delivering real-time data from external APIs. Designed for quick, on-demand forecasts with a clean, responsive interface.',
+      url:         'https://github.com/rabiibenrioui/MyWeather',
     },
     {
-      id:          'dice',
+      id:          'youtube',
       number:      '03',
-      name:        'Mini Dice-Rolling Game',
-      description: 'A lightweight browser game — fast, fun, and built to sharpen JavaScript fundamentals.',
-      url:         '#',
+      name:        'YouTube Clone',
+      description: 'A lightweight mobile YouTube-style app that fetches dynamic thumbnails and video metadata via API. Focused on UI accuracy and data handling, with smooth scrolling and browsing experience.',
+      url:         'https://github.com/rabiibenrioui/YouTube-Clone',
     },
   ],
 
