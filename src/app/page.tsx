@@ -26,7 +26,7 @@ const data: PortfolioData = {
       id:          'clocky',
       number:      '01',
       name:        'Clocky',
-      description: 'A feature-rich mobile clock app built with TypeScript, offering alarms, global timezones, and a stopwatch. Currently in development, with upcoming premium features like streak tracking and advanced utilities.',
+      description: 'A feature-rich mobile clock app built with TypeScript, offering alarms, world clock with global timezones, and a stopwatch — a complete time management toolkit, beautifully packaged.',
       url:         'https://github.com/rabiibenrioui/Clocky',
     },
     {
